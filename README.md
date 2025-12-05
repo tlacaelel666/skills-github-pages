@@ -1,20 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Unified Spiral-Time Framework
 
-# Run and deploy your AI Studio app
+This project is a React-based application that provides an interactive visualization of the Unified Spiral-Time Framework.
 
-This contains everything you need to run your app locally.
+## Development
 
-View your app in AI Studio: https://ai.studio/apps/drive/12pgNXMnBRAx3xyAbSunia4RDbaiDDaR-
+To run this project locally, follow these steps:
 
-## Run Locally
+1.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-**Prerequisites:**  Node.js
+2.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
 
+## Deployment
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Vercel
+
+This project is configured for seamless deployment to Vercel. Simply connect your Git repository to Vercel, and it will automatically build and deploy the application.
+
+### IONOS
+
+To deploy this application to IONOS, follow these steps:
+
+1.  **Build the project:**
+    ```bash
+    npm run build
+    ```
+    This command will create a `dist` directory containing the optimized, static files for your application.
+
+2.  **Upload to IONOS:**
+    - Connect to your IONOS webspace using an FTP/SFTP client (such as FileZilla).
+    - Navigate to the root directory of your website (usually `www` or `htdocs`).
+    - Upload all the files and directories from the local `dist` folder to this directory.
